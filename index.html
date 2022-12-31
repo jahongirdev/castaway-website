@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castaway Landing Page</title>
+
+  <!-- SEO Meta tags -->
+  <meta name="description" content="Castaway Landing Page">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="HTML, CSS, Javascript, Web">
+  <meta name="author" content="Jahongir Murodboev">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#">
+          <img src="img/logo.svg" alt="Site Logo">
+        </a>
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Episodes</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-button">
+          <button class="mobile-menu-btn" onclick="openNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Episodes</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="hero-box-image">
+            <img src="img/hero-img.png" alt="Hero image">
+          </div>
+          <div class="hero-box-content">
+            <h2>Take your podcast to the <span>next</span><b>level</b></h2>
+            <div class="listen">
+              <span>Listen on</span>
+              <div class="listen-box">
+                <a href="#"><img src="img/spotify.svg" alt="Spotify"></a>
+                <a href="#"><img src="img/2.svg" alt="Second"></a>
+                <a href="#"><img src="img/3.svg" alt="Third"></a>
+                <a href="#"><img src="img/4.svg" alt="Fourth"></a>
+                <a href="#"><img src="img/5.svg" alt="Fiveth"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="episodes">
+      <div class="container">
+        <div class="episode">
+          <div class="episode-top">
+            <h2>Latest episodes</h2>
+            <a class="episode-top-btn" href="#">View all episodes</a>
+          </div>
+          <div class="episode-bottom">
+            <div class="episode-item">
+              <div class="episode-item-img">
+                <img src="img/ep1.jpg" alt="Episode Image" srcset="img/ep1.jpg 1x, img/ep1@2x.jpg 2x">
+              </div>
+              <div class="episode-item-content">
+                <div class="item-top">
+                  <span class="tag">Gear</span>
+                  <p class="title">Episode 3</p>
+                </div>
+                <h3>Should you get outboard audio gear?</h3>
+                <p class="item-text">Is hardware really worth it when it comes to podcasting? The answer is...it
+                  depends. Here's our
+                  reasons on why you might want to consider picking something up.</p>
+                <a class="episode-top-btn" href="#">View Episode Details</a>
+              </div>
+            </div>
+            <div class="episode-item">
+              <div class="episode-item-img">
+                <img src="img/ep2.png" alt="Episode Image" srcset="img/ep2.png 1x, img/ep2@2x.png 2x">
+              </div>
+              <div class="episode-item-content">
+                <div class="item-top">
+                  <span class="tag">Tips & Tricks</span>
+                  <p class="title">Episode 2</p>
+                </div>
+                <h3>Mic tricks to take you to the next level</h3>
+                <p class="item-text">Stop rolling with those default settings on your mic. These small tweaks will take
+                  you from sounding good to great.</p>
+                <a class="episode-top-btn" href="#">View Episode Details</a>
+              </div>
+            </div>
+            <div class="episode-item">
+              <div class="episode-item-img">
+                <img src="img/ep3.png" alt="Episode Image" srcset="img/ep3.png 1x, img/ep3@2x.png 2x">
+              </div>
+              <div class="episode-item-content">
+                <div class="item-top">
+                  <span class="tag">Gear</span>
+                  <p class="title">Episode 1</p>
+                </div>
+                <h3>The best microphone under $200</h3>
+                <p class="item-text">With so many microphones on the market, how are you supposed to know what's the
+                  best? Take a look at our top picks.</p>
+                <a class="episode-top-btn" href="#">View Episode Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
