@@ -1,8 +1,8 @@
-### Real Estate Company Website
+### Castaway Website
 
 - Landing Page
 
-[**Live Preview**](https://realestatecompany-web.netlify.app/)
+[**Live Preview**](https://castaway-web.netlify.app/)
 
 **Screenshot:**
 
